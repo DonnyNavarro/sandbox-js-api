@@ -3,10 +3,13 @@ const api_https = require('./api_https.js');
 
 /** Example request using the https api request package */
 async function exampleHttps() {
+    // Response parameters
     const method = 'GET';
     const host = 'covid19-api.com';
     const path = '/country/all?format=json';
+    // Send request
     var response = await api_https.apiRequest(method, host, path);
+    // Verify request succeeded
     expect(response.status).toEqual(200);
     return response
 }
