@@ -10,6 +10,8 @@ async function exampleHttps() {
     expect(response.status).toEqual(200);
     // console.log(response);
 }
-test('testExample', () => {
-    exampleHttps();
-})
+describe('Example Test', () => {
+    it('gets covid data', ()=> {
+        exampleHttps();
+    })
+});
