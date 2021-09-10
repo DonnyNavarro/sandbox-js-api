@@ -1,0 +1,24 @@
+{
+  "name": "sandbox-js-api",
+  "version": "1.0.0",
+  "description": "A sanbox for developing api tools in javascript",
+  "main": "api_https.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "follow-redirects": "^1.14.3",
+    "https": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonnyNavarro/sandbox-js-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonnyNavarro/sandbox-js-api/issues"
+  },
+  "homepage": "https://github.com/DonnyNavarro/sandbox-js-api#readme"
+}
