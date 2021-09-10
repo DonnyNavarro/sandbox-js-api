@@ -1,5 +1,6 @@
 /** An example file to test methods in development */
 const api_https = require('./api_https.js');
+const logs = require('./logging.js');
 
 /** Example request using the https api request package */
 async function exampleHttps() {
@@ -11,6 +12,7 @@ async function exampleHttps() {
     var response = await api_https.apiRequest(method, host, path);
     // Verify request succeeded
     expect(response.status).toEqual(200);
+    logs.saveLog('covidResponse', JSON.stringify(response, null, 4));
     return response
 }
 describe('Example Test', () => {
