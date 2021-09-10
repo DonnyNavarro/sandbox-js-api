@@ -16,7 +16,7 @@ async function exampleHttps() {
     return response
 }
 describe('Example Test', () => {
-    it('gets covid data', async () => {
+    it('Gets Covid Data', async () => {
         const response = await exampleHttps();
         // console.log(response);
     })
